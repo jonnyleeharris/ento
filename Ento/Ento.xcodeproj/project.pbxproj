@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C43A04611B4408FD00092950 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A045D1B4408FD00092950 /* Tests.swift */; };
+		C43A04621B4408FD00092950 /* TestSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A045E1B4408FD00092950 /* TestSystem.swift */; };
+		C43A04631B4408FD00092950 /* TestEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A045F1B4408FD00092950 /* TestEntities.swift */; };
+		C43A04641B4408FD00092950 /* TestComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A04601B4408FD00092950 /* TestComponent.swift */; };
+		C43A04701B44093B00092950 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A04671B44093B00092950 /* Engine.swift */; };
+		C43A04711B44093B00092950 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A04681B44093B00092950 /* Entity.swift */; };
+		C43A04721B44093B00092950 /* EntitySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A04691B44093B00092950 /* EntitySet.swift */; };
+		C43A04731B44093B00092950 /* EntoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046A1B44093B00092950 /* EntoError.swift */; };
+		C43A04741B44093B00092950 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046B1B44093B00092950 /* Family.swift */; };
+		C43A04751B44093B00092950 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046C1B44093B00092950 /* Signal.swift */; };
+		C43A04761B44093B00092950 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046D1B44093B00092950 /* System.swift */; };
+		C43A04771B44093B00092950 /* ListIteratingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046F1B44093B00092950 /* ListIteratingSystem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C43A04541B4408E900092950 /* entoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = entoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43A04591B4408E900092950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43A045D1B4408FD00092950 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		C43A045E1B4408FD00092950 /* TestSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSystem.swift; sourceTree = "<group>"; };
+		C43A045F1B4408FD00092950 /* TestEntities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEntities.swift; sourceTree = "<group>"; };
+		C43A04601B4408FD00092950 /* TestComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestComponent.swift; sourceTree = "<group>"; };
+		C43A04671B44093B00092950 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		C43A04681B44093B00092950 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		C43A04691B44093B00092950 /* EntitySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitySet.swift; sourceTree = "<group>"; };
+		C43A046A1B44093B00092950 /* EntoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntoError.swift; sourceTree = "<group>"; };
+		C43A046B1B44093B00092950 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
+		C43A046C1B44093B00092950 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		C43A046D1B44093B00092950 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		C43A046F1B44093B00092950 /* ListIteratingSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListIteratingSystem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C43A04511B4408E900092950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C43A043E1B4408C900092950 = {
+			isa = PBXGroup;
+			children = (
+				C43A04651B44093B00092950 /* ento */,
+				C43A04561B4408E900092950 /* entoTests */,
+				C43A04551B4408E900092950 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C43A04551B4408E900092950 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C43A04541B4408E900092950 /* entoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C43A04561B4408E900092950 /* entoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C43A045D1B4408FD00092950 /* Tests.swift */,
+				C43A045E1B4408FD00092950 /* TestSystem.swift */,
+				C43A045F1B4408FD00092950 /* TestEntities.swift */,
+				C43A04601B4408FD00092950 /* TestComponent.swift */,
+				C43A04591B4408E900092950 /* Info.plist */,
+			);
+			path = entoTests;
+			sourceTree = "<group>";
+		};
+		C43A04651B44093B00092950 /* ento */ = {
+			isa = PBXGroup;
+			children = (
+				C43A04661B44093B00092950 /* core */,
+				C43A046E1B44093B00092950 /* tools */,
+			);
+			path = ento;
+			sourceTree = "<group>";
+		};
+		C43A04661B44093B00092950 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				C43A04671B44093B00092950 /* Engine.swift */,
+				C43A04681B44093B00092950 /* Entity.swift */,
+				C43A04691B44093B00092950 /* EntitySet.swift */,
+				C43A046A1B44093B00092950 /* EntoError.swift */,
+				C43A046B1B44093B00092950 /* Family.swift */,
+				C43A046C1B44093B00092950 /* Signal.swift */,
+				C43A046D1B44093B00092950 /* System.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		C43A046E1B44093B00092950 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				C43A046F1B44093B00092950 /* ListIteratingSystem.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C43A04531B4408E900092950 /* entoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43A045A1B4408E900092950 /* Build configuration list for PBXNativeTarget "entoTests" */;
+			buildPhases = (
+				C43A04501B4408E900092950 /* Sources */,
+				C43A04511B4408E900092950 /* Frameworks */,
+				C43A04521B4408E900092950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = entoTests;
+			productName = entoTests;
+			productReference = C43A04541B4408E900092950 /* entoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C43A043F1B4408C900092950 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					C43A04531B4408E900092950 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = C43A04421B4408C900092950 /* Build configuration list for PBXProject "ento" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C43A043E1B4408C900092950;
+			productRefGroup = C43A04551B4408E900092950 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C43A04531B4408E900092950 /* entoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C43A04521B4408E900092950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C43A04501B4408E900092950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43A04641B4408FD00092950 /* TestComponent.swift in Sources */,
+				C43A04731B44093B00092950 /* EntoError.swift in Sources */,
+				C43A04701B44093B00092950 /* Engine.swift in Sources */,
+				C43A04711B44093B00092950 /* Entity.swift in Sources */,
+				C43A04771B44093B00092950 /* ListIteratingSystem.swift in Sources */,
+				C43A04761B44093B00092950 /* System.swift in Sources */,
+				C43A04721B44093B00092950 /* EntitySet.swift in Sources */,
+				C43A04741B44093B00092950 /* Family.swift in Sources */,
+				C43A04611B4408FD00092950 /* Tests.swift in Sources */,
+				C43A04631B4408FD00092950 /* TestEntities.swift in Sources */,
+				C43A04621B4408FD00092950 /* TestSystem.swift in Sources */,
+				C43A04751B44093B00092950 /* Signal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C43A04431B4408C900092950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C43A04441B4408C900092950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		C43A045B1B4408E900092950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = entoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = jonnyleeharris.entoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C43A045C1B4408E900092950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = entoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = jonnyleeharris.entoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C43A04421B4408C900092950 /* Build configuration list for PBXProject "ento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43A04431B4408C900092950 /* Debug */,
+				C43A04441B4408C900092950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43A045A1B4408E900092950 /* Build configuration list for PBXNativeTarget "entoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43A045B1B4408E900092950 /* Debug */,
+				C43A045C1B4408E900092950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C43A043F1B4408C900092950 /* Project object */;
+}

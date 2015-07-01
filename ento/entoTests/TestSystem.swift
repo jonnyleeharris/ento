@@ -1,38 +1,5 @@
-# Ento
+import Foundation
 
-An entity component system framework built for Swift 2.0, inspired by [Ash](http://github.com/richardlord/Ash) and [Ashley](https://github.com/libgdx/ashley)
-
-To get started:
-
-##### Sample set- up
-
-```swift
-// Create engine
-let engine:Engine = Engine();
-		
-// Add systems to engine
-let system:TestSystem = TestSystem();
-engine.addSystem(system, priority: 1);
-		
-// Create and add components to the entity.
-let entity:Entity = Entity();
-entity.add(TestComponentA());
-entity.add(TestComponentB());
-entity.add(TestComponentC());
-		
-// Add entity to engine
-try! engine.addEntity(entity);
-		
-// Tick the engine.
-// You should usually do this on a frame by frame basis, passing the delta time
-// since the last tick.
-let mockDeltaTime:Double = 1.0;
-engine.update(mockDeltaTime);
-```
-
-##### Example system
-
-```swift
 public class TestSystem : ListIteratingSystem {
 	
 	init() {
@@ -74,12 +41,19 @@ public class TestSystem : ListIteratingSystem {
 		// Here you can perform one time only actions per entity when they are removed from the system
 		// This could be used in a RenderSystem, for instance - in which you might remove a component's display node
 		// from the scene.
-	}	
+	}
+	
+	var numEntities:Int {
+		get {
+			if let result = self.entitySet?.count {
+				return result;
+			} else {
+				return 0;
+			}
+		}
+	}
+	
+	
+	
 
 }
-```
-
-
-
-
-
