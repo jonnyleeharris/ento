@@ -19,6 +19,7 @@
 		C43A04751B44093B00092950 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046C1B44093B00092950 /* Signal.swift */; };
 		C43A04761B44093B00092950 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046D1B44093B00092950 /* System.swift */; };
 		C43A04771B44093B00092950 /* ListIteratingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046F1B44093B00092950 /* ListIteratingSystem.swift */; };
+		C463064D1B45515A0007FD4C /* FamilyMatchedSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463064C1B45515A0007FD4C /* FamilyMatchedSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		C43A046C1B44093B00092950 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
 		C43A046D1B44093B00092950 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		C43A046F1B44093B00092950 /* ListIteratingSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListIteratingSystem.swift; sourceTree = "<group>"; };
+		C463064C1B45515A0007FD4C /* FamilyMatchedSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMatchedSystem.swift; sourceTree = "<group>"; };
+		C48667991B442FB90050170B /* entoFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entoFrameworkTests.swift; sourceTree = "<group>"; };
+		C486679B1B442FB90050170B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			children = (
 				C43A04651B44093B00092950 /* ento */,
 				C43A04561B4408E900092950 /* entoTests */,
+				C48667981B442FB90050170B /* entoFrameworkTests */,
 				C43A04551B4408E900092950 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,8 +110,18 @@
 			isa = PBXGroup;
 			children = (
 				C43A046F1B44093B00092950 /* ListIteratingSystem.swift */,
+				C463064C1B45515A0007FD4C /* FamilyMatchedSystem.swift */,
 			);
 			path = tools;
+			sourceTree = "<group>";
+		};
+		C48667981B442FB90050170B /* entoFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				C48667991B442FB90050170B /* entoFrameworkTests.swift */,
+				C486679B1B442FB90050170B /* Info.plist */,
+			);
+			path = entoFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +196,7 @@
 				C43A04771B44093B00092950 /* ListIteratingSystem.swift in Sources */,
 				C43A04761B44093B00092950 /* System.swift in Sources */,
 				C43A04721B44093B00092950 /* EntitySet.swift in Sources */,
+				C463064D1B45515A0007FD4C /* FamilyMatchedSystem.swift in Sources */,
 				C43A04741B44093B00092950 /* Family.swift in Sources */,
 				C43A04611B4408FD00092950 /* Tests.swift in Sources */,
 				C43A04631B4408FD00092950 /* TestEntities.swift in Sources */,
@@ -310,6 +326,7 @@
 				C43A045C1B4408E900092950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

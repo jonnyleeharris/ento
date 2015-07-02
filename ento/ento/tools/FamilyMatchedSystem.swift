@@ -1,14 +1,14 @@
 //
-//  ListIteratingEngine.swift
-//  ash-swift
+//  FamilyMatchedSystem.swift
+//  ento
 //
-//  Created by Jonathan Harris on 30/06/2015.
-//  Copyright © 2015 Jonathan Harris. All rights reserved.
+//  Created by Jonathan Harris on 02/07/2015.
+//
 //
 
 import Foundation
 
-public class ListIteratingSystem : System {
+public class FamilyMatchedSystem : System {
 	
 	private var family:Family;
 	
@@ -19,15 +19,8 @@ public class ListIteratingSystem : System {
 		super.init();
 	}
 	
-	override public func update(time: Double) {
+	public override func update(time: Double) {
 		super.update(time);
-		
-		// Update all known entities in the entity set.
-		if let entitySet = self.entitySet {
-			for entity in entitySet.entities {
-				updateEntity(entity, deltaTime: time);
-			}
-		}
 	}
 	
 	override public func addToEngine(engine: Engine) {
@@ -63,18 +56,15 @@ public class ListIteratingSystem : System {
 			}
 		}
 		
-
 	}
 	
 	public func onEntityAddedToSystem(entity:Entity) {
+		
 	}
 	
-	public func onEntityRemovedFromSystem(entity:Entity) {		
-	}
-	
-	public func updateEntity(entity:Entity, deltaTime:Double) {
-	}
-	
-	
+	public func onEntityRemovedFromSystem(entity:Entity) {
+		
+	}	
+
 	
 }

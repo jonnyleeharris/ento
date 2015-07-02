@@ -19,18 +19,7 @@ public class System : Hashable {
 		get {
 			return hashNumber;
 		}
-	}	
-	
-	
-	/**
-	* Used internally to manage the list of systems within the engine. The previous system in the list.
-	*/
-	internal var previous : System?;
-	
-	/**
-	* Used internally to manage the list of systems within the engine. The next system in the list.
-	*/
-	internal var next : System?;
+	}		
 	
 	/**
 	* Used internally to hold the priority of this system within the system list. This is

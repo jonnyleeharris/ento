@@ -9,7 +9,7 @@ public class TestSystem : ListIteratingSystem {
 		// Possible options:
 		
 		// All matches (i.e. AND)
-		super.init(family: Family.all([TestComponentA.self, TestComponentB.self]));
+		super.init(family: Family.all([TestComponentA.self]));
 		
 		// Any match (i.e. OR)
 //		super.init(family: Family.any([TestComponentA.self, TestComponentB.self]));
