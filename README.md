@@ -30,6 +30,32 @@ let mockDeltaTime:Double = 1.0;
 engine.update(mockDeltaTime);
 ```
 
+##### Ticking the engine
+
+You need to tick the engine manually by calling the update function of the engine, passing the delta time since the last update as a parameter.
+
+In SpriteKit, it would be done as follows:
+
+```swift
+class GameScene: SKScene {
+
+	private var prevUpdateTime:Double = 0;
+
+	private let engine:Engine = Engine();
+   
+	 override func update(currentTime: CFTimeInterval) {		
+		// Calculate delta time.
+		if (self.prevUpdateTime <= 0) {
+			self.prevUpdateTime = currentTime;
+		}
+		let deltaTime = currentTime - self.prevUpdateTime;
+		self.prevUpdateTime = currentTime;
+
+		engine.update(deltaTime);
+	}
+}
+```
+
 ##### Example system
 
 ```swift
