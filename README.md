@@ -30,7 +30,7 @@ let mockDeltaTime:Double = 1.0;
 engine.update(mockDeltaTime);
 ```
 
-##### Ticking the engine
+###### Ticking the engine
 
 You need to tick the engine manually by calling the update function of the engine, passing the delta time since the last update as a parameter.
 
