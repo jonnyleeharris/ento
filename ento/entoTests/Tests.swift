@@ -25,19 +25,19 @@ class Tests: XCTestCase {
 	func testFamilyMatching() {
 		let entity:Entity = Entity();
 
-		assert(!Family.all([TestComponentA.self]).matches(entity));
+		assert(!Family.all(TestComponentA.self).matches(entity));
 		
-		assert(!Family.all([TestComponentB.self]).matches(entity));
+		assert(!Family.all(TestComponentB.self).matches(entity));
 		
-		assert(Family.none([TestComponentB.self]).matches(entity));
+		assert(Family.none(TestComponentB.self).matches(entity));
 		
 		entity.add(TestComponentA());
 		entity.add(TestComponentB());
 		
-		assert(Family.all([TestComponentA.self, TestComponentB.self]).matches(entity));
+		assert(Family.all(TestComponentA.self, TestComponentB.self).matches(entity));
 		
-		assert(!Family.any([TestComponentC.self]).matches(entity));
-		assert(Family.any([TestComponentA.self]).matches(entity));
+		assert(!Family.any(TestComponentC.self).matches(entity));
+		assert(Family.any(TestComponentA.self).matches(entity));
 	}
 	
 	func testEntityComponents() {

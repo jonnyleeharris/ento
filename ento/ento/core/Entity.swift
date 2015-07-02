@@ -114,7 +114,7 @@ public class Entity : Hashable {
 		return self.components.values.array;
 	}
 	
-	public func has(componentType:Any) -> Bool {
+	public func has(componentType:AnyClass) -> Bool {
 		let key:String = String(componentType);
 		if let _ = self.components[key] {
 			return true;

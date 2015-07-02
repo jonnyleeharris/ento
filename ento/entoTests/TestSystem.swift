@@ -9,13 +9,13 @@ public class TestSystem : ListIteratingSystem {
 		// Possible options:
 		
 		// All matches (i.e. AND)
-		super.init(family: Family.all([TestComponentA.self]));
+		super.init(family: Family.all(TestComponentA.self));
 		
 		// Any match (i.e. OR)
-//		super.init(family: Family.any([TestComponentA.self, TestComponentB.self]));
+//		super.init(family: Family.any(TestComponentA.self, TestComponentB.self));
 		
 		// Exclude
-//		super.init(family: Family.none([TestComponentD.self, TestComponentC.self]));
+//		super.init(family: Family.none(TestComponentD.self, TestComponentC.self));
 	}
 	
 	// Override update entity to perform your ticking logic on the entity.

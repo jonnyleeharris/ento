@@ -29,26 +29,23 @@ public class Family : Hashable {
 		}
 	}
 	
-	private var components:Array<Any.Type>;
+	private var components:Array<AnyClass>;
 	
-	private init(components : Array<Any.Type>, matchType:MatchType) {
+	private init(components : Array<AnyClass>, matchType:MatchType) {
 		self.familyID = ++Family.familyIndex;
-		self.components = [];
-		for component in components {
-			self.components.append(component);
-		}		
+		self.components = components;
 		self.matchType = matchType;
 	}
 	
-	public class func all(components: [Any.Type]) -> Family {
+	public class func all(components: AnyClass...) -> Family {
 		return Family(components: components, matchType: MatchType.All);
 	}
 	
-	public class func any(components: [Any.Type]) -> Family {
+	public class func any(components: AnyClass...) -> Family {
 		return Family(components: components, matchType: MatchType.Any);
 	}
 	
-	public class func none(components: [Any.Type]) -> Family {
+	public class func none(components: AnyClass...) -> Family {
 		return Family(components: components, matchType: MatchType.None);
 	}
 	
