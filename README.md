@@ -58,6 +58,8 @@ class GameScene: SKScene {
 
 ##### Example system
 
+The following example shows how a system, interested in entities with both components TestComponentA and TestComponentB can access the components from matching entities and perform tick logic.
+
 ```swift
 public class TestSystem : ListIteratingSystem {
 	
