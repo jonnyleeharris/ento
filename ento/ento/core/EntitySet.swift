@@ -23,8 +23,10 @@ public class EntitySet  {
 	}
 	
 	public func insert(entity:Entity) {
-		self.entities.insert(entity);
-		onEntityAdded.fire(entity);
+		if(!self.contains(entity)) {
+			self.entities.insert(entity);
+			onEntityAdded.fire(entity);
+		}
 	}
 	
 	public func remove(entity:Entity) -> Entity? {
