@@ -1,6 +1,6 @@
 # Ento
 
-An entity component system framework built for Swift 2.0, inspired by [Ash](http://github.com/richardlord/Ash) and [Ashley](https://github.com/libgdx/ashley)
+Ento is an entity component system framework built for Swift 2.0, inspired by [Ash](http://github.com/richardlord/Ash) and [Ashley](https://github.com/libgdx/ashley)
 
 To get started:
 
