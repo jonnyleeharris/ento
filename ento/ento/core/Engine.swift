@@ -78,14 +78,12 @@ public class Engine {
 		entity.componentRemoved.removeListener(self)
 		entity.nameChanged.removeListener(self)
 		
-		// If the entity matches any of the families
-		// we must remove that entity from the set of entities
-		// for that family.
-		for family in self.families {
-			if(family.matches(entity)) {
-				familyEntities[family]?.remove(entity);
+		// Remove the entity from any of the entity sets.
+		for entitySet:EntitySet in familyEntities.values {
+			if(entitySet.contains(entity)) {
+				entitySet.remove(entity);
 			}
-		}
+		}	
 		
 		self.entityNames.removeValueForKey(entity.name)
 		self.entityList.remove(entity)
