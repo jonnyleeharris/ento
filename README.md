@@ -2,9 +2,9 @@
 
 Ento is an entity component system framework built for Swift 2.0, inspired by [Ash](http://github.com/richardlord/Ash) and [Ashley](https://github.com/libgdx/ashley)
 
-To get started:
+With thanks to artman's [Signals](https://github.com/artman/Signals) implementation.
 
-##### Sample set- up
+#### Set- up
 
 ```swift
 // Create engine
@@ -30,7 +30,7 @@ let mockDeltaTime:Double = 1.0;
 engine.update(mockDeltaTime);
 ```
 
-###### Ticking the engine
+##### Ticking the engine
 
 You need to tick the engine manually by calling the update function of the engine, passing the delta time since the last update as a parameter.
 
@@ -56,7 +56,7 @@ class GameScene: SKScene {
 }
 ```
 
-##### Example system
+#### Example system
 
 The following example shows how a system, interested in entities with both components TestComponentA and TestComponentB can access the components from matching entities and perform tick logic.
 
@@ -107,7 +107,6 @@ public class TestSystem : ListIteratingSystem {
 }
 ```
 
+#### License
 
-
-
-
+Ento is released under an MIT license. See the LICENSE file for more information
