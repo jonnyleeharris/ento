@@ -278,7 +278,7 @@ public class Engine {
 	private var sortedSystems:Array<System>?
 	
 	private func sortSystems() {
-		self.sortedSystems = self.systemList.sort({ (system1: System, system2: System) -> Bool in return system1.priority > system2.priority });
+		self.sortedSystems = self.systemList.sort({ (system1: System, system2: System) -> Bool in return system1.priority < system2.priority });
 	}
 	
 	/**
