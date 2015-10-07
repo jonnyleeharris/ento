@@ -81,7 +81,7 @@ public class Entity : Hashable {
 	}
 	
 	public func add(component:Any) {
-		let key:String = String(component);
+		let key:String = String(component.dynamicType);
 
 		if let existing = self.components[key] {
 			remove(existing.dynamicType);
@@ -110,17 +110,18 @@ public class Entity : Hashable {
 		return self.components[key] as? T;
 	}
 	
-	public func getAll() -> Array<Any> {
-		return self.components.values.array;
-	}
+//	public func getAll() -> Array<Any> {
+//		return [Any](self.components.values)
+//	}
 	
 	public func has(componentType:AnyClass) -> Bool {
 		let key:String = String(componentType);
-		if let _ = self.components[key] {
-			return true;
-		} else {
-			return false;
-		}
+		return self.components.keys.contains(key)
+//		if let _ = self.components[key] {
+//			return true;
+//		} else {
+//			return false;
+//		}
 	}
 	
 }
