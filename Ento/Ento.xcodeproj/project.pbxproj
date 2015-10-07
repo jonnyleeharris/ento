@@ -20,11 +20,11 @@
 		C43A04761B44093B00092950 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046D1B44093B00092950 /* System.swift */; };
 		C43A04771B44093B00092950 /* ListIteratingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A046F1B44093B00092950 /* ListIteratingSystem.swift */; };
 		C463064D1B45515A0007FD4C /* FamilyMatchedSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463064C1B45515A0007FD4C /* FamilyMatchedSystem.swift */; };
+		C4964A0C1BC55B0900AECAB7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4964A0B1BC55B0900AECAB7 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C43A04541B4408E900092950 /* entoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = entoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C43A04591B4408E900092950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C43A045D1B4408FD00092950 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		C43A045E1B4408FD00092950 /* TestSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSystem.swift; sourceTree = "<group>"; };
 		C43A045F1B4408FD00092950 /* TestEntities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEntities.swift; sourceTree = "<group>"; };
@@ -38,6 +38,7 @@
 		C43A046D1B44093B00092950 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		C43A046F1B44093B00092950 /* ListIteratingSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListIteratingSystem.swift; sourceTree = "<group>"; };
 		C463064C1B45515A0007FD4C /* FamilyMatchedSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMatchedSystem.swift; sourceTree = "<group>"; };
+		C4964A0B1BC55B0900AECAB7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +72,11 @@
 		C43A04561B4408E900092950 /* entoTests */ = {
 			isa = PBXGroup;
 			children = (
+				C4964A0B1BC55B0900AECAB7 /* Info.plist */,
 				C43A045D1B4408FD00092950 /* Tests.swift */,
 				C43A045E1B4408FD00092950 /* TestSystem.swift */,
 				C43A045F1B4408FD00092950 /* TestEntities.swift */,
 				C43A04601B4408FD00092950 /* TestComponent.swift */,
-				C43A04591B4408E900092950 /* Info.plist */,
 			);
 			path = entoTests;
 			sourceTree = "<group>";
@@ -145,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C43A04421B4408C900092950 /* Build configuration list for PBXProject "ento" */;
+			buildConfigurationList = C43A04421B4408C900092950 /* Build configuration list for PBXProject "Ento" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -167,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4964A0C1BC55B0900AECAB7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,12 +201,14 @@
 		C43A04431B4408C900092950 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
 		C43A04441B4408C900092950 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -298,7 +302,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C43A04421B4408C900092950 /* Build configuration list for PBXProject "ento" */ = {
+		C43A04421B4408C900092950 /* Build configuration list for PBXProject "Ento" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C43A04431B4408C900092950 /* Debug */,
